@@ -266,6 +266,12 @@ body.pre-entry .entry-gate{padding-bottom:max(40px,env(safe-area-inset-bottom));
 .offers-section{padding-top:42px!important;padding-bottom:48px!important}
 .logistics-section{padding-top:42px!important}
 .trust-tap-hint{display:none}
+.product-insights .viewer-glass .ingredient-loop{display:block!important;height:auto!important;min-height:0!important;margin-top:26px!important;padding:24px 0 0!important;border:0!important;border-top:1px solid var(--line)!important;border-radius:0!important;background:transparent!important;box-shadow:none!important}
+.product-insights .viewer-glass .ingredient-loop .section-heading{max-width:none;margin:0 0 16px!important}
+.product-insights .viewer-glass .ingredient-loop .section-heading h2{font-size:clamp(1.55rem,3vw,2.35rem)!important;line-height:1.06;margin:7px 0!important}
+.product-insights .viewer-glass .ingredient-loop .section-heading p{font-size:.92rem;margin:0}
+.product-insights .viewer-glass .ingredient-rotator{grid-template-columns:105px 1fr;padding:17px}
+.product-insights .viewer-glass .ingredient-rotator img{width:105px;height:105px}
 @media(max-width:900px){
   .hero{padding-bottom:0!important}
   .hero-visual,.hero .family-stage{min-height:290px!important;height:290px!important}
@@ -281,6 +287,8 @@ body.pre-entry .entry-gate{padding-bottom:max(40px,env(safe-area-inset-bottom));
   .entry-card .entry-choice{margin-top:14px!important;min-height:48px!important;font-size:.86rem!important}
   .trust-card-front{position:relative}
   .trust-tap-hint{display:block!important;position:absolute;top:16px;right:16px;padding:7px 9px;border-radius:999px;background:#6af3e7;color:#071416;font-size:.7rem!important;font-weight:950;letter-spacing:.02em;line-height:1;box-shadow:0 5px 18px rgba(0,0,0,.28)}
+  .product-insights .viewer-glass .ingredient-rotator{grid-template-columns:80px 1fr;padding:14px;gap:12px}
+  .product-insights .viewer-glass .ingredient-rotator img{width:80px;height:80px}
   .testimonials-section>.section-heading h2{font-size:clamp(2.5rem,12vw,3.5rem)}
   .testimonials-section{padding-bottom:34px!important}
   .offers-section{padding-top:28px!important;padding-bottom:34px!important}
@@ -331,7 +339,7 @@ body.pre-entry .entry-gate{padding-bottom:max(40px,env(safe-area-inset-bottom));
 <div class="section-heading reveal"><span class="eyebrow">PRODUTO REAL</span><h2>Veja os potes por todos os lados.</h2><p>Arraste com o mouse ou deslize com o dedo. A transição usa as fotos reais de frente, verso e informação nutricional que você recebeu.</p></div>
 <div class="viewer-product-tabs glass reveal" role="tablist"><button class="viewer-product-tab active" data-viewer-product="drink">🥤 Velmo Drink</button><button class="viewer-product-tab" data-viewer-product="caps">💊 Velmo Cápsulas</button></div>
 <div class="viewer-wrap reveal">
-<div class="viewer-glass glass"><div class="viewer-meta"><span class="viewer-badge">360° interativo</span><span id="viewerLabel">Frente</span></div><div aria-label="Visualizador interativo do produto" class="product-viewer" id="productViewer" tabindex="0"><img alt="Frente do Velmo Black Drink" draggable="false" id="viewerImage" src="drink_front.jpg"/><span class="drag-hint">↔ Arraste para girar</span></div><div class="viewer-dots"><span class="active"></span><span></span><span></span></div><div class="viewer-actions"><button class="btn btn-ghost" id="prevView">← Voltar</button><button class="btn btn-ghost" id="nextView">Girar →</button><button class="btn btn-secondary" id="openLabel">Ampliar rótulo</button></div></div>
+<div class="viewer-glass glass"><div class="viewer-meta"><span class="viewer-badge">360° interativo</span><span id="viewerLabel">Frente</span></div><div aria-label="Visualizador interativo do produto" class="product-viewer" id="productViewer" tabindex="0"><img alt="Frente do Velmo Black Drink" draggable="false" id="viewerImage" src="drink_front.jpg"/><span class="drag-hint">↔ Arraste para girar</span></div><div class="viewer-dots"><span class="active"></span><span></span><span></span></div><div class="viewer-actions"><button class="btn btn-ghost" id="prevView">← Voltar</button><button class="btn btn-ghost" id="nextView">Girar →</button><button class="btn btn-secondary" id="openLabel">Ampliar rótulo</button></div><div class="compact-formula ingredient-loop"><div class="section-heading"><span class="eyebrow">INGREDIENTES EM DESTAQUE</span><h2>Conheça os ingredientes dos produtos.</h2><p>Um ingrediente é apresentado automaticamente a cada 5 segundos.</p></div><div class="ingredient-rotator" aria-live="polite"><img id="ingredientImage" src="pote_morango.png" alt="Velmo Black Drink"><div><span class="ingredient-source" id="ingredientSource">Velmo Drink</span><h3 id="ingredientName">Inulina</h3><p id="ingredientText">Fibra alimentar que contribui para a ingestão diária de fibras.</p><div class="ingredient-progress"><i></i></div></div></div></div></div>
 <div class="viewer-copy glass"><span class="eyebrow">TRANSPARÊNCIA</span><h3 id="viewerProductTitle">Velmo Black Drink</h3><p id="viewerDescription">Confira a frente, as informações traseiras e a tabela nutricional do Drink usando as fotos reais do produto.</p><ul class="clean-list" id="viewerFacts"><li>✓ 30 porções por embalagem</li><li>✓ Informação nutricional disponível para consulta</li><li>✓ Fotos reais do produto</li></ul><p class="fineprint">As imagens do rótulo são exibidas como fornecidas. Consulte sempre as orientações da própria embalagem.</p><div class="transparency-video" id="transparencyVideo"><span>Conheça a fórmula e a fabricação</span><div class="transparency-video-frame"><iframe id="transparencyIframe" title="Fórmula e fabricação, sem áudio" loading="lazy" allow="autoplay; encrypted-media; picture-in-picture" src="https://www.youtube-nocookie.com/embed/6lfaiVoL_u4?autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=6lfaiVoL_u4&amp;playsinline=1&amp;controls=1"></iframe></div><button id="expandTransparency" type="button" aria-expanded="false">Expandir e ouvir vídeo</button></div></div>
 </div></div><div class="insights-formula">
 <div class="section-heading reveal"><span class="eyebrow">FÓRMULA</span><h2>Dois produtos. Uma visão completa da composição.</h2><p>O combo fica no centro e, ao redor, você encontra os principais componentes informados para o Drink e para o Burns Caps.</p></div>
@@ -692,6 +700,19 @@ widget.addEventListener('pointerup',finish);widget.addEventListener('pointercanc
 button?.addEventListener('click',e=>{if(suppress){e.preventDefault();e.stopImmediatePropagation();suppress=false}},true);
 window.addEventListener('resize',()=>{if(!widget.style.left)return;widget.style.left=Math.max(0,Math.min(innerWidth-widget.offsetWidth,parseFloat(widget.style.left)))+'px';widget.style.top=Math.max(0,Math.min(innerHeight-widget.offsetHeight,parseFloat(widget.style.top)))+'px'});
 })();
+
+// Ingredientes dentro do card dos rótulos, alternando a cada 5 segundos.
+const ingredients=[
+{source:'Velmo Drink',name:'Inulina',text:'Fibra alimentar que contribui para a ingestão diária de fibras.',image:'pote_morango.png'},
+{source:'Velmo Burns Caps',name:'Cafeína',text:'Componente estimulante relacionado ao estado de alerta e à concentração.',image:'velmo_caps.png'},
+{source:'Velmo Drink',name:'Chia moída',text:'Fonte de fibras que complementa a composição do Drink.',image:'pote_tangerina.png'},
+{source:'Velmo Burns Caps',name:'Vitamina C',text:'Vitamina com ação antioxidante e participação no funcionamento imune.',image:'velmo_caps.png'},
+{source:'Velmo Drink',name:'Magnésio',text:'Auxilia no metabolismo energético e no funcionamento muscular.',image:'pote_morango.png'},
+{source:'Velmo Burns Caps',name:'Antocianinas da laranja moro',text:'Pigmentos bioativos naturalmente presentes na laranja moro.',image:'velmo_caps.png'},
+{source:'Velmo Drink',name:'Picolinato de cromo',text:'O cromo participa do metabolismo de carboidratos, proteínas e gorduras.',image:'pote_tangerina.png'},
+{source:'Velmo Drink',name:'Biotina',text:'Vitamina que auxilia no metabolismo energético de nutrientes.',image:'pote_morango.png'}
+];
+let ingredientIndex=0;setInterval(()=>{const source=document.getElementById('ingredientSource'),name=document.getElementById('ingredientName'),copy=document.getElementById('ingredientText'),img=document.getElementById('ingredientImage'),bar=document.querySelector('.ingredient-loop .ingredient-progress i');if(!source||!name||!copy||!img||!bar)return;ingredientIndex=(ingredientIndex+1)%ingredients.length;const x=ingredients[ingredientIndex];source.textContent=x.source;name.textContent=x.name;copy.textContent=x.text;img.src=x.image;img.alt=x.source;bar.style.animation='none';requestAnimationFrame(()=>{bar.style.animation='ingredientTimer 5s linear infinite'})},5000);
 
 // Miniaturas abrem o vídeo somente quando a pessoa escolhe assistir.
 const videoModal=document.getElementById('videoModal'),videoPlayer=document.getElementById('videoPlayer');
