@@ -251,6 +251,41 @@ body.pre-entry .entry-gate{padding-bottom:max(40px,env(safe-area-inset-bottom));
 .side-woman-left{left:8px!important;bottom:-70px!important;width:min(34vw,480px)!important;max-height:82vh!important;opacity:.105!important;object-position:left bottom}.product-insights{max-width:980px!important}.product-insights .insights-grid{display:block!important}.product-insights .insights-viewer{width:100%}.product-insights .viewer-wrap{height:auto!important}.product-insights .viewer-glass{height:auto!important;min-height:0!important}.product-insights .product-viewer{min-height:390px!important}.product-insights .compact-formula{height:auto!important;min-height:0!important;margin-top:22px;padding:24px 0 0!important;border:0!important;border-top:1px solid var(--line)!important;border-radius:0!important;background:transparent!important;box-shadow:none!important}.product-insights .compact-formula .section-heading{margin:0 0 16px!important;max-width:none}.product-insights .compact-formula .section-heading h2{font-size:clamp(1.55rem,3vw,2.35rem)!important;margin:7px 0}.product-insights .compact-formula .section-heading p{margin:0;font-size:.92rem}.product-insights .ingredient-rotator{grid-template-columns:105px 1fr;padding:17px}.product-insights .ingredient-rotator img{width:105px;height:105px}.product-insights~.guarantee-band{position:relative;z-index:3;margin-top:28px!important}.factory-preview iframe{inset:0!important;width:100%!important;height:100%!important;opacity:1!important}.video-thumb:first-child .video-play{pointer-events:none}
 @media(max-width:900px){.side-woman-left{left:-15px!important;width:min(46vw,420px)!important}.product-insights{max-width:760px!important}}
 @media(max-width:600px){.side-woman-left{left:-45px!important;width:76vw!important;opacity:.06!important}.product-insights .product-viewer{min-height:330px!important}.product-insights .ingredient-rotator{grid-template-columns:80px 1fr;padding:14px}.product-insights .ingredient-rotator img{width:80px;height:80px}}
+
+/* Ajustes de manutenção: fluxo inicial, espaçamentos e cards de confiança. */
+.hero{padding-bottom:8px!important}
+.hero-visual{min-height:365px!important}
+.hero .family-stage{height:365px!important}
+.hero-family-product{max-height:365px!important;transform:none!important}
+.trust-section{padding-top:30px!important}
+.product-insights .insights-grid{display:block!important}
+.product-insights .insights-formula{display:none!important}
+.testimonials-section>.section-heading{max-width:1080px}
+.testimonials-section>.section-heading h2{font-size:clamp(2.8rem,5vw,4.8rem);line-height:.98}
+.testimonials-section{padding-bottom:48px!important}
+.offers-section{padding-top:42px!important;padding-bottom:48px!important}
+.logistics-section{padding-top:42px!important}
+.trust-tap-hint{display:none}
+@media(max-width:900px){
+  .hero{padding-bottom:0!important}
+  .hero-visual,.hero .family-stage{min-height:290px!important;height:290px!important}
+  .hero-family-product{max-height:290px!important}
+  .trust-section{padding-top:24px!important}
+}
+@media(max-width:600px){
+  .entry-gate{padding-top:30px;padding-bottom:36px}
+  .entry-lead{margin-bottom:24px}
+  .entry-options{gap:12px}
+  .entry-card{padding:18px 16px!important;min-height:0!important}
+  .entry-card h2{margin:0!important;min-height:0!important;font-size:1.35rem!important;line-height:1.08;text-align:center}
+  .entry-card .entry-choice{margin-top:14px!important;min-height:48px!important;font-size:.86rem!important}
+  .trust-card-front{position:relative}
+  .trust-tap-hint{display:block!important;position:absolute;top:16px;right:16px;padding:7px 9px;border-radius:999px;background:#6af3e7;color:#071416;font-size:.7rem!important;font-weight:950;letter-spacing:.02em;line-height:1;box-shadow:0 5px 18px rgba(0,0,0,.28)}
+  .testimonials-section>.section-heading h2{font-size:clamp(2.5rem,12vw,3.5rem)}
+  .testimonials-section{padding-bottom:34px!important}
+  .offers-section{padding-top:28px!important;padding-bottom:34px!important}
+  .logistics-section{padding-top:28px!important}
+}
 </style>
 </head>
 <body class="pre-entry">
@@ -261,7 +296,7 @@ body.pre-entry .entry-gate{padding-bottom:max(40px,env(safe-area-inset-bottom));
 <header class="topbar glass">
 <a aria-label="Velmo Black" class="brand" href="#top"><img alt="Velmora" class="brand-logo-img" src="velmora_logo.png"/><span>VELMO BLACK</span></a>
 <nav aria-label="Navegação principal" class="desktop-nav">
-<a href="#rotulo">Fórmula e fabricação</a><a href="#depoimentos">Depoimentos</a><a href="#ofertas">Ofertas</a><a href="#faq">Dúvidas</a>
+<a href="#rotulo">Fórmula e fabricação</a><a href="#depoimentos">Resultados</a><a href="#ofertas">Ofertas</a><a href="#faq">Dúvidas</a>
 </nav>
 <div class="top-actions"><a class="top-cta secondary" href="https://chat.whatsapp.com/HzU8NXe29m94Q3h8b6AS1o?s=cl&amp;p=i&amp;mlu=4&amp;ilr=4" rel="noopener" target="_blank">Grupo de descontos</a><a class="top-cta" href="#ofertas">Ver ofertas</a></div>
 </header>
@@ -273,12 +308,10 @@ body.pre-entry .entry-gate{padding-bottom:max(40px,env(safe-area-inset-bottom));
 </div></div></section>
 <section class="hero section-pad" id="inicio">
 <div class="hero-copy reveal">
-<span class="eyebrow">LINHA VELMO BLACK</span>
 <h1><span class="hero-brand-line">Velmo Black.</span><span class="hero-message">Você só precisa de uma decisão pra mudar tudo.</span></h1>
-<p class="hero-sub">Drink nos sabores <strong>Morango</strong> e <strong>Tangerina</strong>, <strong>Burns Caps</strong> ou o <strong>Combo Drink + Cápsulas</strong>.</p>
 
 </div>
-<div class="hero-visual reveal" id="produto"><div class="hero-glow"></div><div class="product-stage family-stage"><img alt="Linha Velmo Black Drink e Burns Caps" class="hero-family-product" src="velmo_combo.png"/></div><div class="family-tags"><a href="#ofertas" data-jump-offer="drink">🥤 Drink</a><a href="#ofertas" data-jump-offer="caps">💊 Cápsulas</a><a href="#ofertas" data-jump-offer="combo">⚡ Combo</a></div></div>
+<div class="hero-visual reveal" id="produto"><div class="hero-glow"></div><div class="product-stage family-stage"><img alt="Linha Velmo Black Drink e Burns Caps" class="hero-family-product" src="velmo_combo.png"/></div></div>
 </section>
 
 
@@ -300,7 +333,7 @@ body.pre-entry .entry-gate{padding-bottom:max(40px,env(safe-area-inset-bottom));
 <div class="viewer-wrap reveal">
 <div class="viewer-glass glass"><div class="viewer-meta"><span class="viewer-badge">360° interativo</span><span id="viewerLabel">Frente</span></div><div aria-label="Visualizador interativo do produto" class="product-viewer" id="productViewer" tabindex="0"><img alt="Frente do Velmo Black Drink" draggable="false" id="viewerImage" src="drink_front.jpg"/><span class="drag-hint">↔ Arraste para girar</span></div><div class="viewer-dots"><span class="active"></span><span></span><span></span></div><div class="viewer-actions"><button class="btn btn-ghost" id="prevView">← Voltar</button><button class="btn btn-ghost" id="nextView">Girar →</button><button class="btn btn-secondary" id="openLabel">Ampliar rótulo</button></div></div>
 <div class="viewer-copy glass"><span class="eyebrow">TRANSPARÊNCIA</span><h3 id="viewerProductTitle">Velmo Black Drink</h3><p id="viewerDescription">Confira a frente, as informações traseiras e a tabela nutricional do Drink usando as fotos reais do produto.</p><ul class="clean-list" id="viewerFacts"><li>✓ 30 porções por embalagem</li><li>✓ Informação nutricional disponível para consulta</li><li>✓ Fotos reais do produto</li></ul><p class="fineprint">As imagens do rótulo são exibidas como fornecidas. Consulte sempre as orientações da própria embalagem.</p><div class="transparency-video" id="transparencyVideo"><span>Conheça a fórmula e a fabricação</span><div class="transparency-video-frame"><iframe id="transparencyIframe" title="Fórmula e fabricação, sem áudio" loading="lazy" allow="autoplay; encrypted-media; picture-in-picture" src="https://www.youtube-nocookie.com/embed/6lfaiVoL_u4?autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=6lfaiVoL_u4&amp;playsinline=1&amp;controls=1"></iframe></div><button id="expandTransparency" type="button" aria-expanded="false">Expandir e ouvir vídeo</button></div></div>
-</div></div><div class="insights-formula"><div class="compact-formula glass reveal"><div class="section-heading"><span class="eyebrow">INGREDIENTES EM DESTAQUE</span><h2>Uma fórmula, apresentada sem excessos.</h2><p>Conheça componentes do Velmo Drink e do Velmo Burns Caps. A lista alterna automaticamente.</p></div><div class="ingredient-rotator" aria-live="polite"><img id="ingredientImage" src="pote_morango.png" alt="Velmo Black Drink"><div><span class="ingredient-source" id="ingredientSource">Velmo Drink</span><h3 id="ingredientName">Inulina</h3><p id="ingredientText">Fibra alimentar que contribui para a ingestão diária de fibras.</p><div class="ingredient-progress"><i></i></div></div></div></div>
+</div></div><div class="insights-formula">
 <div class="section-heading reveal"><span class="eyebrow">FÓRMULA</span><h2>Dois produtos. Uma visão completa da composição.</h2><p>O combo fica no centro e, ao redor, você encontra os principais componentes informados para o Drink e para o Burns Caps.</p></div>
 <div class="formula-family reveal">
 <div class="formula-column drink-col"><div class="formula-col-head"><span>🥤</span><strong>Velmo Drink</strong></div>
@@ -660,22 +693,6 @@ button?.addEventListener('click',e=>{if(suppress){e.preventDefault();e.stopImmed
 window.addEventListener('resize',()=>{if(!widget.style.left)return;widget.style.left=Math.max(0,Math.min(innerWidth-widget.offsetWidth,parseFloat(widget.style.left)))+'px';widget.style.top=Math.max(0,Math.min(innerHeight-widget.offsetHeight,parseFloat(widget.style.top)))+'px'});
 })();
 
-// Rótulos e ingredientes formam um único card compacto.
-const technicalCard=document.querySelector('.product-insights .viewer-glass');const compactFormula=document.querySelector('.product-insights .compact-formula');if(technicalCard&&compactFormula)technicalCard.append(compactFormula);
-
-// Ingredientes em um único card, alternando a cada 5 segundos.
-const ingredients=[
-{source:'Velmo Drink',name:'Inulina',text:'Fibra alimentar que contribui para a ingestão diária de fibras.',image:'pote_morango.png'},
-{source:'Velmo Burns Caps',name:'Cafeína',text:'Componente estimulante relacionado ao estado de alerta e à concentração.',image:'velmo_caps.png'},
-{source:'Velmo Drink',name:'Chia moída',text:'Fonte de fibras que complementa a composição do Drink.',image:'pote_tangerina.png'},
-{source:'Velmo Burns Caps',name:'Vitamina C',text:'Vitamina com ação antioxidante e participação no funcionamento imune.',image:'velmo_caps.png'},
-{source:'Velmo Drink',name:'Magnésio',text:'Auxilia no metabolismo energético e no funcionamento muscular.',image:'pote_morango.png'},
-{source:'Velmo Burns Caps',name:'Antocianinas da laranja moro',text:'Pigmentos bioativos naturalmente presentes na laranja moro.',image:'velmo_caps.png'},
-{source:'Velmo Drink',name:'Picolinato de cromo',text:'O cromo participa do metabolismo de carboidratos, proteínas e gorduras.',image:'pote_tangerina.png'},
-{source:'Velmo Drink',name:'Biotina',text:'Vitamina que auxilia no metabolismo energético de nutrientes.',image:'pote_morango.png'}
-];
-let ingredientIndex=0;setInterval(()=>{ingredientIndex=(ingredientIndex+1)%ingredients.length;const x=ingredients[ingredientIndex];document.getElementById('ingredientSource').textContent=x.source;document.getElementById('ingredientName').textContent=x.name;document.getElementById('ingredientText').textContent=x.text;const img=document.getElementById('ingredientImage');img.src=x.image;img.alt=x.source;const bar=document.querySelector('.ingredient-progress i');bar.style.animation='none';requestAnimationFrame(()=>{bar.style.animation='ingredientTimer 5s linear infinite'})},5000);
-
 // Miniaturas abrem o vídeo somente quando a pessoa escolhe assistir.
 const videoModal=document.getElementById('videoModal'),videoPlayer=document.getElementById('videoPlayer');
 function closeVideoModal(){videoModal.classList.remove('open');videoModal.setAttribute('aria-hidden','true');videoPlayer.innerHTML=''}
@@ -687,13 +704,9 @@ let resultToastTimer=null;function startResultToast(){resultToastTimer=setTimeou
 function closeResultToast(){clearTimeout(resultToastTimer);document.getElementById('resultToast')?.classList.remove('show')}
 const resultToast=document.getElementById('resultToast');document.getElementById('closeResultToast')?.addEventListener('click',e=>{e.stopPropagation();closeResultToast()});document.getElementById('resultToastLink')?.addEventListener('click',closeResultToast);resultToast?.addEventListener('click',e=>{if(e.target.closest('button'))return;closeResultToast();document.getElementById('depoimentos')?.scrollIntoView({behavior:'smooth',block:'start'})});resultToast?.addEventListener('keydown',e=>{if(e.key==='Enter'){closeResultToast();document.getElementById('depoimentos')?.scrollIntoView({behavior:'smooth',block:'start'})}});
 
-// Frente com o título; verso com a explicação. No mobile, vira conforme o scroll.
+// Frente com o título; verso com a explicação. O card só vira por ação da pessoa.
 const trustCards=[...document.querySelectorAll('.trust-card')];
-trustCards.forEach(card=>{const mark=card.querySelector('.trust-mark'),title=card.querySelector('h3'),copy=card.querySelector('p');const inner=document.createElement('div');inner.className='trust-card-inner';const front=document.createElement('div');front.className='trust-card-face trust-card-front';const back=document.createElement('div');back.className='trust-card-face trust-card-back';front.append(mark,title);back.append(copy);inner.append(front,back);card.append(inner);card.tabIndex=0;card.setAttribute('role','button');card.setAttribute('aria-label',`${title.textContent}. Toque para ver mais.`);card.addEventListener('click',()=>card.classList.toggle('is-flipped'));card.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();card.classList.toggle('is-flipped')}})});
-const mobileTrust=matchMedia('(max-width: 600px)');
-const trustFlipObserver=new IntersectionObserver(entries=>{if(!mobileTrust.matches)return;entries.forEach(entry=>entry.target.classList.toggle('is-flipped',entry.isIntersecting))},{root:null,rootMargin:'-28% 0px -28% 0px',threshold:.45});
-trustCards.forEach(card=>trustFlipObserver.observe(card));
-mobileTrust.addEventListener?.('change',e=>{if(!e.matches)trustCards.forEach(card=>card.classList.remove('is-flipped'))});
+trustCards.forEach(card=>{const mark=card.querySelector('.trust-mark'),title=card.querySelector('h3'),copy=card.querySelector('p');const inner=document.createElement('div');inner.className='trust-card-inner';const front=document.createElement('div');front.className='trust-card-face trust-card-front';const hint=document.createElement('span');hint.className='trust-tap-hint';hint.textContent='Toque para virar';front.append(mark,title,hint);const back=document.createElement('div');back.className='trust-card-face trust-card-back';back.append(copy);inner.append(front,back);card.append(inner);card.tabIndex=0;card.setAttribute('role','button');card.setAttribute('aria-label',`${title.textContent}. Toque para virar.`);card.addEventListener('click',()=>card.classList.toggle('is-flipped'));card.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();card.classList.toggle('is-flipped')}})});
 
 // Reforço de garantia e entrega junto a todos os CTAs de compra.
 document.querySelectorAll('.offer-card .checkout-btn,.offer-card .gummy-buy,.combo-checkout-btn').forEach(btn=>{const trust=document.createElement('div');trust.className='cta-trust';trust.innerHTML='<span>🛡️ Garantia de 30 dias</span><span>🚚 Entrega em todo o Brasil</span>';btn.insertAdjacentElement('beforebegin',trust)});
